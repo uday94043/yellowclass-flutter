@@ -3,6 +3,7 @@ import 'package:bdprogreebar/loaders/color_loader_5.dart';
 import 'package:bdprogreebar/loaders/dot_type.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:video/userAuth/PersistUser.dart';
 import 'userAuth/SignIn.dart';
 
@@ -24,8 +25,13 @@ class MyApp extends StatelessWidget {
 
         // Once complete, show your application
         if (snapshot.connectionState == ConnectionState.done) {
-          return MaterialApp(
-            home: PersistUser(),
+          return Shortcuts(
+            shortcuts: <LogicalKeySet, Intent>{
+              LogicalKeySet(LogicalKeyboardKey.select): ActivateIntent(),
+            },
+            child: MaterialApp(
+              home: PersistUser(),
+            ),
           );
         }
 

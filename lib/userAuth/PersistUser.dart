@@ -20,13 +20,9 @@ class PersistUser extends StatelessWidget {
         // Once complete, show your application
         if (snapshot.connectionState == ConnectionState.done &&
             prefs?.getBool('isLoggedIn') == true) {
-          return MaterialApp(
-            home: VideoApp(),
-          );
+          return VideoApp();
         }
-        return MaterialApp(
-          home: SignIn(),
-        );
+        return SignIn();
       },
     );
   }
