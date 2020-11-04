@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "79549112697",
+    "firebase_url": "https://yellowclass-329aa.firebaseio.com",
+    "project_id": "yellowclass-329aa",
+    "storage_bucket": "yellowclass-329aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79549112697:android:f197d4fb271b734d5dcfa8",
+        "android_client_info": {
+          "package_name": "com.uday.video"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79549112697-4tbs8if598n7cajb0kod6q7jbbd9u48f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKnP3sDszHJ3wiXmBTQQcAkUO3WHOjD-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79549112697-4tbs8if598n7cajb0kod6q7jbbd9u48f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
